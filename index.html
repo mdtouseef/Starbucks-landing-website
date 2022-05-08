@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>starBucks landing</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"> <img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Special</a>
+                    <a href="#">contact Us</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>
+                    It's not just the Coffee <br> It's <span>Starbucks</span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur minus non vel hic, alias totam! Error soluta voluptate voluptatum possimus! Nesciunt,
+                    corporis dolores similique nihil esse laboriosam voluptate itaque dolorem rerum aut quasi
+                    consequatur odit ipsum autem velit facilis iusto? Voluptatem error itaque nam ullam.</p>
+                <a href="#">Learn More!</a>
+            </div>
+            <div class="imgbox">
+                <img src="images/img1.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class = " thumb">
+            <li> <img src="images/thumb1.png" onclick = "imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+            <li> <img src="images/thumb2.png" onclick = "imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+            <li> <img src="images/thumb3.png" onclick = "imgSlider('images/img3.png');changeCircleColor('#d752d1')"></li>
+        </ul>
+        <!-- <ul class = "soicon">
+            <li><a href="#" class = "fas fa-search"></a></li>
+            <li><a href="#" class = "fas fa-facebook"></a></li>
+            <li><a href="#" class = "fas fa-twitter"></a></li>
+            <li><a href="#" class = "fas fa-instagram"></a></li>
+            <li><a href="#" class = "fas fa-google"></a></li>
+            <li><a href="#" class = "fas fa-github"></a></li>
+            <li><a href="#" class = "fas fa-youtube"></a></li>
+        </ul> -->
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
